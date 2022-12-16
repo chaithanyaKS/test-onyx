@@ -67,23 +67,25 @@
         type="text/javascript"
     ></script> -->
 
+
     <script
         src="https://us-cdn-gpp.mcsvc.samsung.com/lib/wallet-card.js"
         type="text/javascript"
     ></script>
-
+    <div id="TARGET_ID"></div>
     <script>
-        samsungWallet.addButton({
-            targetId: "btn",
-            buttonId: "add-to-wallet",
-            cardId: "3g575l5l9rjg0",
-            cdata: "hi",
-            partnerCode: "4041107270760138496",
-            RDClickUrl: "https://us-rd.mcsvc.samsung.com/statistics/click/addtowlt?ep=C50C3754FEB24833B30C10B275BB6AB8;cc=GC;ii=1287098641034510350;co=4041107270760138496;cp=1288017491089625089;si=24;pg=101212967375212546;pi=Aqz68EBXSx6Mv9jsaZxzaA;tp=4041107344991138240;li=0",
-            RDImpressionUrl: "https://us-rd.mcsvc.samsung.com/statistics/impression/addtowlt?ep=C50C3754FEB24833B30C10B275BB6AB8;cc=GC;ii=1287098641034510350;co=4041107270760138496;cp=1288017491089625089;si=24;pg=101212967375212546;pi=Aqz68EBXSx6Mv9jsaZxzaA;tp=4041107344991138240;li=0",
-            target: "wallet",
-            showForced: true
-        });
+        samsungWallet.addButton(
+            {
+                partnerCode: "4041107270760138496",
+                cardId: "3g575l5l9rjg0",
+                cdata: "hi",
+                RDClickUrl: "https://us-rd.mcsvc.samsung.com/statistics/click/addtowlt?ep=C50C3754FEB24833B30C10B275BB6AB8;cc=GC;ii=1287098641034510350;co=4041107270760138496;cp=1288017491089625089;si=24;pg=101212967375212546;pi=Aqz68EBXSx6Mv9jsaZxzaA;tp=4041107344991138240;li=0",
+                RDImpressionUrl: "https://us-rd.mcsvc.samsung.com/statistics/impression/addtowlt?ep=C50C3754FEB24833B30C10B275BB6AB8;cc=GC;ii=1287098641034510350;co=4041107270760138496;cp=1288017491089625089;si=24;pg=101212967375212546;pi=Aqz68EBXSx6Mv9jsaZxzaA;tp=4041107344991138240;li=0",
+                targetId: "btn",
+                buttonId: "BUTTON_ID",
+                target: "wallet",
+                showForced: true
+            })
     </script>
 </body>
 
